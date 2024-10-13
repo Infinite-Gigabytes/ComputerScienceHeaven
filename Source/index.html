@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+			body{
+				margin: 20px;
+				font-family: 'Manrope', sans-serif;
+				background-image: linear-gradient(to right, #4682B4,#FF3737);
+				animation: moveUp 1s ease-in-out;
+				animation-fill-mode: backwards;
+			}
+			nav ul {
+				list-style: none;
+				padding: 0;
+			}
+			nav ul li {
+				display: inline-block;
+			}
+			nav ul li a {
+				animation: moveUp 1s ease-in-out;
+				animation-fill-mode: backwards;
+				padding: 10px;
+				background-color:black;
+				text-decoration: none;
+				border-radius: 100px;
+				margin: 0 5px;
+				color: white;
+			}
+			
+			@keyframes moveUp {
+				0% {
+					transform: translateY(100px);
+					opacity: 0;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+			
+			@keyframes moveUpFadeIn {
+				0% {
+					transform: translateY(100px);
+					opacity: 0;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+			@keyframes moveUpFadeOut {
+				0% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-100px);
+					opacity: 0;
+				}
+			}
+			* {
+				color: white;
+			}
+			
+			.websiteTitle {
+				font-size:19px;
+				animation: moveUpFadeIn 1s ease-in-out;
+				animation-fill-mode: backwards;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="websiteTitle">Welcome</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a onclick="animateOut()" href="index.html">Welcome</a></li>
+				<li><a onclick="animateOut()" href="placeholder1.html" >Hardware</a></li>
+				<li><a onclick="animateOut()" href="placeholder2.html">Logical</a></li>
+				<li><a onclick="animateOut()" href="placeholder3.html">Credits</a></li>
+			</ul>
+		</nav>
+		<hr>
+		
+		<main>
+			<h1>Welcome!</h1>
+			<img src="Public\computer.png" style="float:right; transform: rotate(-25deg);" width=250px>
+			<h3>Welcome to computer science heaven!</h3>
+			<h4>What are computers?</h4>
+			<p>Computers are usually consumer grade machinery that process data and utilize it in ways a developer, a person who can give instructions to computers, instruct it to do.</p>
+			<p>Although computers may seem easy and simple to use and operate, they are extremely complex and use complicated sequences of code and operations to function.</p>
+			<h4>What do computers understand?</h4>
+			<P>Computers are codeded in binary. Binary is composed of ones (1s) and zeros (0s). This language is the only language computers can understand and process.</P>
+			<p>Many people get confused when they find out that computers only understand binary because there are other coding languages which computers can run and utilize. The truth is that computers convert the languages into binary and then translate them as any other language except binary, computers see them as gibberish.</p>
+			<h4>The History Of Computers</h4>
+			<p>The history of computers is a fascinating journey of technological evolution, from simple mechanical devices to the powerful machines we have today. Here's a condensed timeline covering key milestones from the earliest computers to modern-day systems like those with RTX 4090 GPUs and Ryzen 9 processors.</p>
+			<h5>1. Early Mechanical Devices (1600s - 1800s)</h5>
+			<img src="Public\EarlyMachine.png" style="float:right; transform: rotate(25deg);" width=250px>
+			<p>Abacus (~2000 BC): One of the earliest tools for computation, used for arithmetic operations.</p>
+			<p>Pascaline (1642): Blaise Pascal invented one of the first mechanical calculators.</p>
+			<p>Jacquard Loom (1801): A mechanical loom that used punch cards to control the weaving process, laying the groundwork for programmable machines.</p>
+			<p>Analytical Engine (1837): Designed by Charles Babbage, this was the first concept of a general-purpose computer. It was never built in his lifetime but had all the components of a modern computer (arithmetic unit, control flow, memory).</p>
+			<h5>2. The Birth of Electronic Computers (1930s - 1940s)</h5>
+			<p>Atanasoff-Berry Computer (1937-1942): Considered the first electronic digital computer, though not programmable.</p>
+			<p>ENIAC (1945): The first general-purpose electronic digital computer, used for military applications (like calculating artillery firing tables).</p>
+			<p>Colossus (1943): The first programmable digital computer, used by British codebreakers during WWII to break German codes.</p>
+			<h5>3. Early Programmable Computers (1950s)</h5>
+			<p>UNIVAC I (1951): The first commercial computer in the U.S., used by businesses and the government.</p>
+			<img src="Public\UNIVACI.png" style="float:right; transform: rotate(-25deg);" width=250px>
+			<p>IBM 701 (1952): IBM's first commercial scientific computer, which marked the beginning of IBM's dominance in the computing market.</p>
+			<p>Transistor-Based Computers (1950s): The introduction of the transistor replaced vacuum tubes, allowing computers to become smaller, faster, and more reliable.</p>
+			<h5>4. Mainframes and Minicomputers (1960s - 1970s)</h5>
+			<p>IBM System/360 (1964): The first family of computers with backward compatibility. It was a hugely influential system in both business and scientific applications.</p>
+			<p>DEC PDP-8 (1965): The first successful minicomputer, making computing accessible to smaller businesses and academic institutions.</p>
+			<h5>5. Microprocessor Revolution (1970s)</h5>
+			<p>Intel 4004 (1971): The world's first microprocessor, revolutionizing the computing industry by integrating a CPU onto a single chip.</p>
+			<p>Apple I & Apple II (1976-1977): Apple, founded by Steve Jobs and Steve Wozniak, introduced one of the first successful personal computers for the home market.</p>
+			<img src="Public\AppleII.png" style="float:right; transform: rotate(25deg);" width=250px>
+			<h5>6. The Personal Computer (1980s - 1990s)</h5>
+			<p>IBM PC (1981): IBM's first personal computer, which set standards that the PC industry followed for decades. Microsoft provided the operating system (MS-DOS).</p>
+			<p>Macintosh (1984): Apple's Macintosh popularized the graphical user interface (GUI), mouse, and desktop metaphor, transforming how people used computers.</p>
+			<p>Windows 95 (1995): Microsoft's Windows 95 popularized the start menu, taskbar, and a more user-friendly interface, further driving PC adoption.</p>
+			<h5>7. The Rise of the Internet and Laptops (1990s - 2000s)</h5>
+			<p>Internet Expansion (1990s): The World Wide Web, invented by Tim Berners-Lee, rapidly expanded, connecting computers worldwide. It became the defining feature of modern computing.</p>
+			<p>Laptops and Mobile Computing: By the mid-1990s, laptops became more popular due to advances in battery technology and portable computing power, marking the start of mobile computing.</p>
+			<h5>8. Multi-Core Processors and GPUs (2000s - 2010s)</h5>
+			<p>AMD Athlon and Intel Core Series (2000s): Multi-core processors became mainstream, allowing computers to handle more tasks simultaneously.</p>
+			<img src="Public\AMDAthlon.png" style="float:right; transform: rotate(-25deg);" width=250px>
+			<p>GPUs for Gaming and AI: GPUs (Graphics Processing Units) from NVIDIA (like the GeForce series) and AMD became essential not only for gaming but for scientific computing and AI research.</p>
+			<p>NVIDIA's CUDA (2006): CUDA allowed GPUs to be used for more general-purpose computing tasks, revolutionizing fields like AI, deep learning, and data science.</p>
+			<h5>9. Modern Era: High-Performance Computing (2010s - 2024)</h5>
+			<p>AMD Ryzen and Threadripper (2017): AMD's Ryzen series brought high core-count CPUs to mainstream consumers, competing with Intel in performance.</p>
+			<p>NVIDIA RTX Series (2018): The RTX series of GPUs, starting with the RTX 20 series, introduced real-time ray tracing, revolutionizing gaming graphics and AI computing.</p>
+			<p>RTX 4090 (2022): The NVIDIA RTX 4090 is one of the most powerful consumer GPUs, featuring AI-powered graphics, DLSS (Deep Learning Super Sampling), and incredible computational power for gaming and professional workloads.</p>
+			<p>AMD Ryzen 9 (2019-2024): The Ryzen 9 series offers top-tier performance with up to 16 cores and 32 threads, making it ideal for gaming, video editing, and multitasking. Ryzen processors became a major force, challenging Intel's dominance in desktop and gaming CPUs.</p>
+			<h5>10. Future Trends (Speculative)</h5>
+			<p>Quantum Computing: Companies like IBM, Google, and Intel are working on quantum computers, which could potentially solve problems much faster than classical computers.</p>
+			<p>AI Integration: AI-driven architectures are increasingly integrated into CPUs and GPUs, enabling more intelligent automation and accelerating machine learning tasks.</p>
+			<p>Edge Computing and IoT: Computing is increasingly moving toward decentralized systems, with the Internet of Things (IoT) and edge computing playing significant roles in future innovations.</p>
+			<img src="Public\QuantumComputing.png" style="float:right; transform: rotate(25deg); border-radius: 20px;" width="170px">
+			<h5>11. Conclusion</h5>
+			<p>To conclude, computers have evolved from mechanical calculators and room-sized machines to modern devices capable of handling trillions of operations per second. Systems like those powered by NVIDIA's RTX 4090 GPU and AMD's Ryzen 9 CPU represent the pinnacle of modern computing, capable of running advanced simulations, real-time graphics, AI tasks, and more at incredible speeds.</p>
+		</main>
+	</body>
+	<script>
+		function animateOut() {
+			document.body.style.animation = "moveUpFadeOut 1s ease-in-out";
+			document.body.style.animationFillMode = "forwards";
+		}
+	</script>
+</html>
+
